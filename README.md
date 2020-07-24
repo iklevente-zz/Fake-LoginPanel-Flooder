@@ -4,6 +4,4 @@ A program to spam a fake login panel with random passwords. I made this program 
  ## Buy me a coffee ☕:
 **[PayPal](https://www.paypal.me/iklevi)**
 
-**Bitcoin wallet:** `bc1qa4a6w0mzp43423t2ctxx958uff4yhkazxag7ya`
-
 **Monero address:** `44zh2iQsZcc8knbgwDPhRzKHmX6fgAq8kHz84qoCYv4v6qaRjVWcUmhFfjc8dhkYQw9whdecg3wtALe8ScJr5Ck4Hut4HNe`
