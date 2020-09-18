@@ -9,18 +9,20 @@ from time import sleep
 
 tries = 1
 
+## !!!!!! You will need to "pip install selenium" !!!!!!
+
 while (tries < 10000): # Set 10000 to how many times you want to spam the stealer site with fake passwords.
 	
-	print tries
+	print(tries)
 
 	usernameStr = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(8)) # Generate random uppercase username
 	passwordStr = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(8)) # Generate random uppercase password
 
-	print "Current generated password is: " + usernameStr
-	print "Current generated password is: " + passwordStr
+	print("Current generated password is: " + usernameStr)
+	print("Current generated password is: " + passwordStr)
 
-	# Chose your chromedriver path. I was using Linux and I downloaded it from https://chromedriver.chromium.org/downloads. Download the one wich matches your chrome/chromium version. You can check your chromium version on html5test.com
-	browser = webdriver.Chrome("/bin/chromedriver") 
+	# Choose your chromedriver path. I downloaded it from https://chromedriver.chromium.org/downloads. Download the one which matches your chrome/chromium version. You can check your chromium version on html5test.com
+	browser = webdriver.Chrome("C:\\Users\\Levente\\Desktop\\Fake-LoginPanel-Flooder-master\\chromedriver.exe") 
 	browser.get(('https://casenorm.fun/auth')) # Login panel's URL address
 
 	username = browser.find_element_by_id('steamAccountName') # Username textbox on login site. (Right click in username textbox --> Inspect element --> search for id="something")
